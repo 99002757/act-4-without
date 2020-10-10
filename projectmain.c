@@ -1,7 +1,5 @@
  #include "header.h"
- int sum(int a, int b){
-   return a+b;
-}
+
 int main()
 {
    int num1, num2, num3;
