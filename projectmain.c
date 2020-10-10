@@ -1,14 +1,17 @@
  #include "header.h"
- int main() {    
+ int sum(int a, int b){
+   return a+b;
+}
+int main()
+{
+   int num1, num2, num3;
+   printf("Enter first number: ");
+   scanf("%d", &num1);
+   printf("Enter second number: ");
+   scanf("%d", &num2);
 
-    int number1, number2, sum;
-    
-    printf("Enter two integers: ");
-    scanf("%d %d", &number1, &number2);
-
-    // calculating sum
-    sum = number1 + number2;      
-    
-    printf("%d + %d = %d", number1, number2, sum);
-    return 0;
+   //Calling the function
+   num3 = sum(num1, num2);
+   printf("Sum of the entered numbers: %d", num3);
+   return 0;
 }
